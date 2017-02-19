@@ -1,0 +1,52 @@
+<!-- <web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+version="2.4">
+<servlet>
+<servlet-name>R3 Piwo</servlet-name>
+
+<servlet-class>com.example.web.WyborPiwa</servlet-class>
+1
+</servlet>
+
+<servlet-mapping>
+<servlet-name>R3 Piwo</servlet-name>
+<url-pattern>/WybierzPiwo.do</url-pattern>
+</servlet-mapping>
+</web-app> -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  
+  <servlet>
+  <servlet-name>Witamy</servlet-name>
+    <servlet-class>pl.javastart.servlets.Home</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Witamy</servlet-name>
+  <url-pattern> </url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Hello World</servlet-name>
+    <servlet-class>pl.javastart.servlets.HelloWorldServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Hello World</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+	<servlet-name>R3 Piwo</servlet-name>
+
+	<servlet-class>pl.javastart.servlets.WybierzPiwo</servlet-class>
+	</servlet>
+
+<servlet-mapping>
+<servlet-name>R3 Piwo</servlet-name>
+<url-pattern>/WybierzPiwo</url-pattern>
+</servlet-mapping>
+  
+</web-app>
